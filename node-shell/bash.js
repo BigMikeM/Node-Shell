@@ -1,17 +1,10 @@
 // Output a prompt
 process.stdout.write('prompt > ');
 const pwd = require('./pwd')
-
-pwd()
-
-const ls = require('./ls');
-
-ls()
-
-const cat = require('./cat');
-
-cat()
-
 const curl = require('./curl');
-
+const ls = require('./ls');
+const cat = require('./cat');
+pwd()
+ls()
 curl();
+cat()
